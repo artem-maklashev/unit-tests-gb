@@ -78,6 +78,9 @@ public class CalculatorTest {
             assertThatThrownBy(() ->
             Calculator.calculatingDiscount(100, 101)
             ).isInstanceOf(ArithmeticException.class);
+            assertThatThrownBy(() ->
+                    Calculator.calculatingDiscount(-1, 101)
+            ).isInstanceOf(ArithmeticException.class);
 
     }
 }
