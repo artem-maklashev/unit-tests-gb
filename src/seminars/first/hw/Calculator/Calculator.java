@@ -51,4 +51,7 @@ public class Calculator {
         if (purchaseAmount < 0) throw new ArithmeticException("Цена товара не может быть меньше 0");
         return purchaseAmount - (double) discountAmount /100; // Метод должен возвращать сумму покупки со скидкой
     }
+
+    public void computeAreaCircle(double radius) {
+    }
 }

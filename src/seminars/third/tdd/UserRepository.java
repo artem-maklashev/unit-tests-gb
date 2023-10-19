@@ -1,5 +1,7 @@
 package seminars.third.tdd;
 
+import org.assertj.core.api.AbstractFileAssert;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,5 +22,13 @@ public class UserRepository {
             }
         }
         return false;
+    }
+
+    public void logout() {
+        data.removeIf(user -> !user.getAdmin());
+    }
+
+    public List<User> getData() {
+        return data;
     }
 }
