@@ -43,10 +43,9 @@ public class Tests {
         user2.authenticate("Tom", "123");
         ur.addUser(user1);
         ur.addUser(user2);
-        System.out.println(ur.getData().size());
 
         ur.logout();
-        System.out.println(ur.getData().size());
+
         assertThat(ur.getData().size()).isEqualTo(1);
 
     }
