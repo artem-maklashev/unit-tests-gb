@@ -2,12 +2,12 @@ package seminars.hw6;
 
 import java.util.*;
 
-public class MyIntList<Integer> implements IMyList {
+public class MyIntList implements IMyList<Integer> {
     public static final Random RANDOM = new Random();
     private List<java.lang.Integer> list;
 
     public MyIntList() {
-        this.list = new ArrayList<>();
+        this.list = new LinkedList<>();
     }
 
 
@@ -20,28 +20,33 @@ public class MyIntList<Integer> implements IMyList {
     }
 
 
-
     @Override
-    public void compareAverange(IMyList list2) {
-        double firstAvrage = countAverage();
-        double secondAvrage = list2.countAverage();
-        if (firstAvrage == secondAvrage) {
+    public void compareAverage(IMyList<Integer> list2) {
+        double firstAverage = countAverage();
+        double secondAverage = list2.countAverage();
+        if (firstAverage == secondAverage) {
             System.out.println("Средние значения равны");
-        }
-//        System.out.println(firstAvrage > secondAvrage ? "Первый список имеет большее среднее значение" : "Второй список имеет большее среднее значение");
+        } else
+            System.out.println(firstAverage > secondAverage ? "Первый список имеет большее среднее значение" : "Второй список имеет большее среднее значение");
 
     }
 
+    @Override
     public void createList(int size) {
+        if (!list.isEmpty()) {
+            list = new LinkedList<>();
+        }
         for (int i = 0; i < size; i++) {
             list.add(RANDOM.nextInt(10));
         }
     }
 
+    @Override
     public void setList(List<java.lang.Integer> list) {
         this.list = list;
     }
 
+    @Override
     public List<java.lang.Integer> getList() {
         return list;
     }
