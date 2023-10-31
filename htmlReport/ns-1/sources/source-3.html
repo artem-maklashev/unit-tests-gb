@@ -1,0 +1,96 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1251"> 
+  <title>Coverage Report > IMyList</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">seminars.hw6</a>
+</div>
+
+<h1>Coverage Summary for Class: IMyList (seminars.hw6)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">IMyList</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;/**
+&nbsp; * Пакет кода домашнего задания 6
+&nbsp; *
+&nbsp; * @author Maklashev Artem
+&nbsp; * @version 1.0
+&nbsp; */
+&nbsp;
+&nbsp;package seminars.hw6;
+&nbsp;
+&nbsp;import java.util.List;
+&nbsp;
+&nbsp;/**
+&nbsp; * Интерфейс работы со списком
+&nbsp; *
+&nbsp; * @param &lt;T&gt; любой класс наследник Numeric
+&nbsp; **/
+&nbsp;
+&nbsp;public interface IMyList&lt;T extends Number&gt; {
+&nbsp;    double countAverage();
+&nbsp;
+&nbsp;    void compareAverage(IMyList&lt;T&gt; list2);
+&nbsp;
+&nbsp;    void createList(int size);
+&nbsp;
+&nbsp;    void setList(List&lt;T&gt; integers);
+&nbsp;
+&nbsp;    List&lt;T&gt; getList();
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-10-31 23:13</div>
+</div>
+</body>
+</html>

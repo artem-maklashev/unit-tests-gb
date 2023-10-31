@@ -22,7 +22,6 @@ public class MyIntList implements IMyList<Integer> {
         this.list = new LinkedList<>();
     }
 
-
     @Override
     public double countAverage() {
         if (list.isEmpty()) {
@@ -31,16 +30,15 @@ public class MyIntList implements IMyList<Integer> {
         return list.stream().mapToInt(i -> i).average().getAsDouble();
     }
 
-
     @Override
     public void compareAverage(IMyList<Integer> list2) {
         double firstAverage = countAverage();
         double secondAverage = list2.countAverage();
         if (firstAverage == secondAverage) {
             System.out.println("Средние значения равны");
-        } else
+        } else {
             System.out.println(firstAverage > secondAverage ? "Первый список имеет большее среднее значение" : "Второй список имеет большее среднее значение");
-
+        }
     }
 
     @Override

@@ -9,7 +9,7 @@ public class Service {
         this.myList = myList;
     }
 
-    public void createList (int size) {
+    public void createList(int size) {
         myList.createList(size);
     }
 

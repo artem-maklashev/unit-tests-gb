@@ -13,8 +13,8 @@ import java.util.List;
  * Интерфейс работы со списком
  *
  * @param <T> любой класс наследник Numeric
- */
-@SuppressWarnings("checkstyle:AbbreviationAsWordInName")
+ **/
+
 public interface IMyList<T extends Number> {
     double countAverage();
 
