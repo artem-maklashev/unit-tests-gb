@@ -1,8 +1,20 @@
 package seminars.hw6;
 
-import java.util.*;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.NoSuchElementException;
+import java.util.Random;
 
+/**
+ * Реализация интерфейса IMyList<Integer>
+ *      для работы со списком целых чисел
+ *      и методами для работы с ним
+ */
 public class MyIntList implements IMyList<Integer> {
+    /**
+     * Создание экземпляра класса Random для генерации случайных чисел
+     */
+
     public static final Random RANDOM = new Random();
     private List<java.lang.Integer> list;
 

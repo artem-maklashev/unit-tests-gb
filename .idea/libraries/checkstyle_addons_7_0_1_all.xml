@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="checkstyle-addons-7.0.1-all">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/checkstyle-addons-7.0.1-all.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
